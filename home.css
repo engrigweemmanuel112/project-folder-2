@@ -1,0 +1,413 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #c2bdbd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+/***  Navigation section **/
+
+nav img{  
+  border-radius: 90px;
+  width: 80px;
+  height: 80px; 
+  margin:10px;
+
+}
+
+nav{
+  background-color: #797474;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  margin-right: 40px;
+  transition: color 0.5ms;
+}
+
+nav a:hover{
+  color: aqua;
+  background-color: #363131;
+}
+
+.burger-image{
+  position:absolute;
+  top:0;
+  right:0;
+  transform: scale(1.5) ;
+  margin: 20px;
+  visibility: hidden;
+}
+
+
+/** header section */
+header{
+  background-image: url(/assets/bg\ img.jpeg);
+  background-size: cover;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding: 20px;
+  color: rgb(242, 244, 247);
+  line-height: 1.5;
+}
+
+header h1 {
+  margin-bottom: 30px;
+}
+
+header p{
+  margin-bottom: 30px;
+}
+
+button{
+  background-color: #e6d9d9;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 50px;
+ 
+}
+button:hover{
+  color: aqua;
+  background-color: #3b3737;
+  transform: color 0.9s, 
+}
+ 
+ /** Main section */
+main{
+  background-color: #3a3737;
+  max-width: 50%;
+  margin: auto;
+  border-radius: 30px;
+  border: #f0eded solid ;
+  box-shadow: 0.5px 10px rgba(170, 154, 154, 0.5);
+  text-align: center;
+  padding: 40px 10px;
+  margin-bottom: 30px;
+}
+
+main p{
+  color: white;
+  margin: 30px;
+  line-height: 2;
+
+}
+
+main h2{
+  border-bottom: 2px solid honeydew;
+  display: inline-block;
+}
+
+/** Footer section */
+footer{
+  background-color: #797474;
+  text-align: center;
+}
+
+.footer-list{
+ list-style: none;
+ padding-top: 10px;
+ font-size: medium;
+}
+
+.footer-list a{
+  text-decoration: none;
+  margin-right: 20px;
+  color: blue;
+  transition: color 0.5s;
+}
+
+.footer-list a:hover{
+  color: rgb(116, 116, 124);
+}
+
+.footer-socials{
+  padding-bottom: 10px;
+  
+}
+
+.footer-socials a  {
+  color: #fff;
+  margin-right: 20px;
+  transition: color 0.4s;
+}
+
+.footer-socials a:hover{
+  color: aquamarine;
+}
+
+
+/*ABOUT US SECTION */
+.about{
+  display: flex;
+  margin-top: 5.0rem;
+}
+
+.about-section{
+   display: flex;
+}
+
+.about-para{
+  background-color: rgb(185, 185, 161);
+  width: 50%;
+  height: auto;
+  margin-left: 2rem;
+  padding: 1rem;
+}
+
+/* CALL TO ACTION SECTION*/
+
+main{
+  margin-top: 1.5rem;
+}
+
+.call-to-action{
+  max-width: auto;
+  text-align: center;
+  height: auto;
+  margin-top: 30px;
+}
+
+/*PORTFOLIO SECTION*/
+.portfolio{
+margin-top: 150px;
+background-image: url(/assets/service-bg-image.jpg);
+
+}
+
+.sub-portfolio{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: auto;
+  max-width: 900px;
+}
+.port{
+  background-color: rgb(126, 121, 121);
+  text-align: center;
+  padding: 55px;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+
+.burger-nav{
+  z-index: 6;
+  position: absolute;
+  top:0;
+  right:0;
+  padding:5px;
+  background-color: rgb(121, 115, 115);
+  margin: 20px;
+  display: none;
+  
+}
+.burger-nav ul{
+  list-style: none;
+  
+}
+
+.burger-nav a{
+ text-decoration: none;
+ color: rgb(10, 10, 10);
+ margin: 5px; 
+ font-weight: bold;
+}
+
+.burger-nav li{
+  margin: 10px 12px;
+
+ }
+ .burger-nav :hover {
+  color: rgb(58, 23, 185);
+ }
+
+
+ /* CONTACT US CSSS */
+
+ .contact{
+  margin-top: 50px;
+  padding: 40px;
+  display:flex;
+  justify-content: center;
+ 
+  
+ }
+
+ .contact-box{
+  background-image: url(/assets/contact-bg-image.avif);
+  border-radius: 30px;
+  padding:10px;
+  margin: auto 50px;
+  width: fit-content;
+  height: 100vh;
+ }
+ 
+ .contact h2{
+  text-align: center;
+  color: black;
+  margin: auto;
+
+ }
+ .contact-box label{
+  color: rgb(214, 15, 58);
+  font-size: 20px;
+  font-weight: bold;
+ }
+ 
+
+ .contact-box input{
+  border: 2px solid;
+  font-size: 12px;
+  font-weight: bold;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 30px;
+ }
+ .map-location h2{
+  color: rgb(31, 31, 243);
+  text-align: center;
+  text-decoration: underline;
+  padding: 5px;
+ }
+
+
+/*RESPONSIVE CSS for HOME PAGE*/
+@media screen and  (max-width:600px) {
+  * html, body {
+    overflow-x: hidden;
+    width: 100%; 
+  }
+  
+  .burger-image:hover{
+      visibility: hidden;
+      
+     }  
+
+      .burger-image:hover ~ .burger-nav{
+       display: block;
+
+     } 
+
+     .nav-list{
+      visibility: hidden;
+     }
+     
+     .burger-nav:hover{
+      display: block;
+     }
+     .burger-image{
+      position:absolute;
+      top:0;
+      right:0;
+      transform: scale(1.5) ;
+      margin: 20px;
+      visibility:visible;
+    }
+
+     /* Header section */
+
+     header{
+      background-image: url(/assets/bg\ img.jpeg);
+      background-size:auto;
+      margin-top: 4rem;
+      padding-top: 2.5rem;
+      padding: 20px;
+      color: rgb(242, 244, 247);
+      line-height: 1.5;
+    }
+
+    header h1 {
+      margin-bottom: 1rem;
+    }
+    
+    header p{
+      margin-bottom: 1.5rem;
+    }
+    
+    button{
+      background-color: #e6d9d9;
+      font-size: 1rem;
+      padding: 0.3rem;
+      margin-bottom: 1.5rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+
+    /** Main section */
+ main{
+  margin-top: 1.5rem;
+  background-color: #3a3737;
+  border-radius: 1.5rem;
+  border: #f0eded solid ;
+  box-shadow: 0.1rem 0.5rem rgba(170, 154, 154, 0.5);
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+}
+
+main p{
+  color: white;
+  margin: 1rem;
+  line-height: 2;
+}
+
+main h2{
+  border-bottom: 0.3rem solid honeydew;
+  display: inline-block;
+  width: auto;
+  font-size: 0.7rem;
+  color: blue;
+  letter-spacing: 0.2rem;
+}
+
+/* ABOUT -PAGE */
+
+ .about{
+  display: flex;
+}
+
+.about-section{
+  flex-direction:column;
+
+
+}
+
+.about-img{
+  margin-bottom: 1rem;
+  max-width:5%;
+}
+
+.about-para{
+  background-color: rgb(128, 174, 192);
+  max-width: 95vw;
+  margin-left:3.5rem;
+  border-radius: 3rem;
+} 
+}
+
